@@ -4,12 +4,12 @@ var gl = renderer.getContext()
 
 var objects = []
 
-Mesh.load(gl, '/assets/sphere.obj', '/assets/diffuse.png')
+Mesh.load(gl, './js/assets/sphere.obj', './js/assets/diffuse.png')
     .then(function (mesh) {
       objects.push(mesh)
     })
 
-ShaderProgram.load(gl, '/shaders/basic.vert', '/shaders/basic.frag')
+ShaderProgram.load(gl, './js/shaders/basic.vert', './js/shaders/basic.frag')
              .then(function (shader) {
                renderer.setShader(shader)
              })
