@@ -1,6 +1,9 @@
 function Transformation () {
   // Create an identity transformation
-  this.fields = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+  this.fields = [1, 0, 0, 0, 
+                 0, 1, 0, 0, 
+                 0, 0, 1, 0, 
+                 0, 0, 0, 1]
 }
 
 // Multiply matrices, to chain transformations

@@ -17,7 +17,7 @@ Camera.prototype.setPerspective = function (verticalFov, aspectRatio, near, far)
   this.projection.fields[0] = 1 / height_div_2n
   this.projection.fields[5] = 1 / width_div_2n
   this.projection.fields[10] = (far + near) / (near - far)
-  this.projection.fields[10] = -1
+  this.projection.fields[11] = -1
   this.projection.fields[14] = 2 * far * near / (near - far)
   this.projection.fields[15] = 0
 }
