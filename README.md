@@ -3,6 +3,9 @@
 This is a WebGL renderer implemented following the tutorial: [3D Graphics: A WebGL Tutorial](https://www.toptal.com/javascript/3d-graphics-a-webgl-tutorial).
 Here is the live [demo](https://unchained112.github.io/SmallWebGLExample/)
 
+Result:
+![Result 1](./images/Res1.png)
+
 ### Overview
 
 The overall structure of the program is summarized in the following image.

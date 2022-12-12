@@ -6,8 +6,8 @@ function movement(e, camera){
     if(e.key == 'ArrowRight') camera.position = camera.position.rotateY(-0.05)
 
     // move camera
-    var yaw = camera.position.fields[6]
-    var speed = 0.2
+    var yaw = camera.position.fields[6] // To be fixed later
+    var speed = 0.1
     var forwardDri = {x: Math.sin(yaw) * speed, y: 0, z: Math.cos(yaw) * speed}
     var rightDir = {x: forwardDri.z * speed, y: 0, z: -forwardDri.x * speed}
     if(e.key == 'w') camera.position = camera.position.translate(-forwardDri.x, -forwardDri.y, -forwardDri.z)
